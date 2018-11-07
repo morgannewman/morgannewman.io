@@ -6,8 +6,12 @@ $red: #9c1a02;
   font-weight: bold;
 }
 
-html {
-  font-display: 'Roboto Mono', 'Georgia', 'serif';
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', 'Georgia', 'serif';
   min-width: 320px;
 }
 
@@ -17,5 +21,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-display: 'Roboto Condensed', 'Avenir Next', 'sans-serif';
+  font-family: 'Roboto Condensed', 'Avenir Next', 'sans-serif';
 }
