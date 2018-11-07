@@ -7,7 +7,19 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  min-height: 400px;
+  min-height: 250px;
+  @media screen and (min-width: 571px) and (max-width: 670px) {
+    min-height: 300px;
+  }
+  @media screen and (min-width: 671px) and (max-width: 840px) {
+    min-height: 350px;
+  }
+  @media screen and (min-width: 841px) and (max-width: 1440px) {
+    min-height: 400px;
+  }
+  @media screen and (min-width: 1441px) {
+    min-height: 550px;
+  }
 }
 
 .introduction-title {
