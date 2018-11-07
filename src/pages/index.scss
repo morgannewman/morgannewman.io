@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono:400,700');
+$red: #9c1a02;
+
+.emphasis {
+  color: $red;
+  font-weight: bold;
+}
+
+html {
+  font-display: 'Roboto Mono', 'Georgia', 'serif';
+  min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-display: 'Roboto Condensed', 'Avenir Next', 'sans-serif';
+}
