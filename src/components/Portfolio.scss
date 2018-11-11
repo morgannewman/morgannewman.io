@@ -24,37 +24,3 @@
     font-size: 3.8em;
   }
 }
-
-.portfolio-items {
-  list-style: none;
-  margin: 0;
-  padding: 1.6em 0;
-}
-
-.portfolio-item {
-}
-
-.portfolio-item-title {
-  margin: 0;
-  margin-bottom: 8px;
-
-  font-size: 1.1em;
-  @media screen and (min-width: 571px) and (max-width: 670px) {
-    font-size: 1.4em;
-  }
-  @media screen and (min-width: 671px) and (max-width: 840px) {
-    font-size: 1.7em;
-  }
-  @media screen and (min-width: 841px) and (max-width: 1440px) {
-    font-size: 2em;
-  }
-  @media screen and (min-width: 1441px) {
-    font-size: 3.3em;
-  }
-}
-
-// 2160x498 on 4K
-.portfolio-item-image {
-  width: 100%;
-  background: transparent;
-}
