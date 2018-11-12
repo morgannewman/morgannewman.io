@@ -23,3 +23,7 @@ h5,
 h6 {
   font-family: 'Roboto Condensed', 'Avenir Next', 'sans-serif';
 }
+
+*:focus {
+  outline-color: black;
+}

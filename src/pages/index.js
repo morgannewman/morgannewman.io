@@ -6,7 +6,7 @@ import Portfolio from '../components/Portfolio'
 
 const IndexPage = () => (
   <>
-    <Introduction />
+    {/* <Introduction /> */}
     <Portfolio />
   </>
 )
