@@ -1,6 +1,7 @@
 import './index.scss'
 import React from 'react'
 import { graphql } from 'gatsby'
+import { Helmet } from "react-helmet"
 // Components
 import Introduction from '../components/Introduction'
 import Portfolio from '../components/Portfolio'
@@ -9,6 +10,11 @@ import ContactBar from '../components/ContactBar'
 const IndexPage = ({ data }) => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Portfolio | Morgan Newman</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <ContactBar />
       <Introduction />
       <Portfolio data={data} />
