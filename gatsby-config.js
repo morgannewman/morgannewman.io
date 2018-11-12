@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Morgan Newman\'s Portfolio',
   },
+  pathPrefix: '/src/portfolio',
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',

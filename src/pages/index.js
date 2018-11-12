@@ -4,10 +4,12 @@ import { graphql } from 'gatsby'
 // Components
 import Introduction from '../components/Introduction'
 import Portfolio from '../components/Portfolio'
+import ContactBar from '../components/ContactBar'
 
 const IndexPage = ({ data }) => {
   return (
     <>
+      <ContactBar />
       <Introduction />
       <Portfolio data={data} />
     </>
@@ -41,6 +43,9 @@ export const pageQuery = graphql`
       ...screenshot
     }
     wombybackend: file(relativePath: { eq: "screenshots/womby-backend.png" }) {
+      ...screenshot
+    }
+    lexii: file(relativePath: { eq: "screenshots/lexii.png" }) {
       ...screenshot
     }
     js: file(relativePath: { eq: "technologies/js.svg" }) {
