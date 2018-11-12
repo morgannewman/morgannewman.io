@@ -1,6 +1,4 @@
 $red: #9c1a02;
-.portfolio-items {
-}
 
 .portfolio-item {
   margin: 0;
@@ -54,6 +52,14 @@ $red: #9c1a02;
 
 .portfolio-item-information {
   position: relative;
+  // Grow with the size of positioned buttons
+  height: 116px;
+  @media screen and (min-width: 671px) {
+    height: 132px;
+  }
+  @media screen and (min-width: 841px) {
+    height: 48px;
+  }
 }
 
 .portfolio-item-technologies {
@@ -62,10 +68,10 @@ $red: #9c1a02;
   margin: 0;
   padding: 0;
   border-left: 8px solid black;
-  // border-left: 16px solid black;
   padding-right: 16px;
   height: 40px;
   @media screen and (min-width: 671px) {
+    // border-left: 16px solid black;
     height: 48px;
   }
 }
@@ -85,11 +91,9 @@ $red: #9c1a02;
   @media screen and (min-width: 1124px) {
     margin-left: 16px;
   }
-  background: pink;
 }
 
 .portfolio-item-link-container {
-  // float: right;
   @media screen and (max-width: 840px) {
     width: 100%;
     display: flex;
@@ -109,6 +113,7 @@ $red: #9c1a02;
   font-size: 1.4em;
   height: 40px;
   line-height: 40px;
+  text-decoration: none;
 
   @media screen and (min-width: 671px) {
     height: 48px;

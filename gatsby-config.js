@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Morgan Newman\'s Portfolio',
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -12,6 +12,7 @@ module.exports = {
         path: `${__dirname}/src/portfolio`,
       },
     },
+
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-manifest',

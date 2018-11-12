@@ -1,29 +1,22 @@
 import './PortfolioItems.scss'
 import React from 'react'
-import portfolio from '../portfolio'
+import Img from 'gatsby-image'
 
-export default function PortfolioItems() {
-  return portfolio.map((item, index) => {
-    const { title, description, screenshot, technologies, github, demo } = item
+export default function PortfolioItems({ portfolio }) {
+  return portfolio.map(item => {
+    const { title, description, screenshot, github, demo } = item
     return (
-      <section className="portfolio-item">
+      <section className="portfolio-item" key={title}>
         <h3 className="emphasis portfolio-item-title">{title}</h3>
-        {screenshot}
+        <Img fluid={screenshot} className="portfolio-item-image" />
         <p>{description}</p>
         <div className="portfolio-item-information">
-          <ul className="portfolio-item-technologies">
-            <li className="portfolio-item-technologies-image" />
-            <li className="portfolio-item-technologies-image" />
-            <li className="portfolio-item-technologies-image" />
-            <li className="portfolio-item-technologies-image" />
-            <li className="portfolio-item-technologies-image" />
-            <li className="portfolio-item-technologies-image" />
-          </ul>
+          {/* <ul className="portfolio-item-technologies" /> */}
           <div className="portfolio-item-link-container">
             <a
               href={github}
               target="blank"
-              tabindex="1"
+              tabIndex="1"
               className="portfolio-item-link portfolio-item-link-secondary"
             >
               GitHub
@@ -31,7 +24,7 @@ export default function PortfolioItems() {
             <a
               href={demo}
               target="blank"
-              tabindex="1"
+              tabIndex="1"
               className="portfolio-item-link portfolio-item-link-primary"
             >
               Demo
