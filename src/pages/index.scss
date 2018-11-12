@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono:400,700');
 $red: #9c1a02;
-$black: #0f0f0f;
+$black: #1a1a1a;
+$white: #f9f9f7;
 
 .emphasis {
   color: $red;
@@ -15,6 +16,7 @@ body {
   font-family: 'Roboto Mono', 'Georgia', 'serif';
   min-width: 320px;
   color: $black;
+  background: $white;
 }
 
 h1,

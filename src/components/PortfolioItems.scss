@@ -135,7 +135,7 @@ $red: #9c1a02;
   &:hover,
   &:focus {
     transform: translate(-2px, -2px);
-    box-shadow: 2px 2px black;
+    box-shadow: 2px 2px lighten(#000000, 50%);
   }
   &:active {
     transform: translate(0px);

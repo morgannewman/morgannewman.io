@@ -1,3 +1,5 @@
+$white: #f9f9f7;
+
 .contact {
   // // display: flex;
   // // flex-direction: column;
@@ -7,7 +9,7 @@
 }
 
 .contact-bar {
-  background-color: white;
+  background-color: $white;
   border: 1px solid black;
   z-index: 2;
   // Position contact icons
