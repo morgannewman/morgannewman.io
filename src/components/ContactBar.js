@@ -4,9 +4,9 @@ import {
   FaLinkedin as LinkedIn,
   FaMedium as Medium,
   FaGithub as Github,
-  FaFileAlt as Resume,
+  FaFileAlt as ResumeIcon,
 } from 'react-icons/fa'
-import Test from '../portfolio/Test.pdf'
+import Resume from '../portfolio/Resume.pdf'
 
 export default function ContactBar() {
   return (
@@ -33,8 +33,8 @@ export default function ContactBar() {
         >
           <Medium className="contact-link-icon" />
         </a>
-        <a href={Test} target="blank" className="contact-link">
-          <Resume className="contact-link-icon" />
+        <a href={Resume} target="blank" className="contact-link">
+          <ResumeIcon className="contact-link-icon" />
         </a>
       </aside>
     </div>
