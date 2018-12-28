@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "morgannewman.io",
+  "description": "The portfolio website of Morgan Newman",
+  "version": "0.2.0",
+  "author": "Morgan Newman <mpnewman95@gmail.com>",
   "dependencies": {
     "gatsby": "^2.0.77",
     "gatsby-image": "^2.0.25",
@@ -23,9 +23,6 @@
     "react-typography": "^0.16.18",
     "typography": "^0.16.18"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -39,6 +36,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/morgannewman/morgannewman.io"
   }
 }
