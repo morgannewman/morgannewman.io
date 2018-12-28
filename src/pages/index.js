@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Portfolio | Morgan Newman</title>
-        <link rel="canonical" href="http://mysite.com/example" />
+        <link rel="canonical" href="https://morgannewman.io" />
       </Helmet>
       <main className="main">
         <ContactBar />
