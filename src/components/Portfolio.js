@@ -8,7 +8,7 @@ export default function Portfolio({ data }) {
       title: 'Knowted',
       description:
         'Along with 3 other engineers, I helped lead the architecture and execution of a content aggregation platform called Knowted. The idea is simple: group your learning resources by topic to stay organized, and use rich text editing comparable to Evernote to keep notes on them.',
-      screenshot: data.lexii.childImageSharp.fluid,
+      screenshot: data.knowted.childImageSharp.fluid,
       technologies: ['JavaScript', 'React', 'Node', 'PostgreSQL'],
       github: 'https://github.com/morgannewman/lexii',
       demo: 'https://lexii-hack.firebaseapp.com/'
@@ -35,16 +35,25 @@ export default function Portfolio({ data }) {
       title: 'Lexii (Hackathon)',
       description:
         'Built over a weekend with engineers from Facebook and Cloudflareto to help writers find relevant, royalty-free images to pair with their content—like magic.',
-      screenshot: data.lexii.childImageSharp.fluid,
+      screenshot: data.lexiihack.childImageSharp.fluid,
       technologies: ['JavaScript', 'React', 'Python Flask'],
       github: 'https://github.com/morgannewman/lexii',
       demo: 'https://lexii-hack.firebaseapp.com/'
     },
     {
+      title: 'morgannewman.io',
+      description:
+        'A daringly-simple notetaking web app that saves as you type.',
+      screenshot: data.portfolio.childImageSharp.fluid,
+      technologies: ['JavaScript', 'React', 'Gatsby.js', 'GraphQL'],
+      github: 'https://github.com/morgannewman/morgannewman.io',
+      demo: 'https://morgannewman.io'
+    },
+    {
       title: 'Learnery',
       description:
         'A fellow engineer and I created a playful MVP of a flashcard application to help engineers study for challenging programming interviews. The motivating factor was our curiosity to apply spaced-repetition to our own learning app.',
-      screenshot: data.lexii.childImageSharp.fluid,
+      screenshot: data.learnery.childImageSharp.fluid,
       technologies: ['JavaScript', 'React', 'Node', 'PostgreSQL'],
       github: 'https://github.com/morgannewman/lexii',
       demo: 'https://lexii-hack.firebaseapp.com/'

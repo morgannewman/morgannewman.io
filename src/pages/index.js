@@ -37,16 +37,6 @@ export const screenshot = graphql`
   }
 `;
 
-export const icon = graphql`
-  fragment icon on File {
-    childImageSharp {
-      fluid(maxWidth: 48) {
-        ...GatsbyImageSharpFluid_tracedSVG
-      }
-    }
-  }
-`;
-
 export const portrait = graphql`
   fragment portrait on File {
     childImageSharp {
@@ -62,14 +52,20 @@ export const pageQuery = graphql`
     womby: file(relativePath: { eq: "screenshots/womby.png" }) {
       ...screenshot
     }
-    wombybackend: file(relativePath: { eq: "screenshots/womby-backend.png" }) {
-      ...screenshot
-    }
     lexii: file(relativePath: { eq: "screenshots/lexii.png" }) {
       ...screenshot
     }
-    js: file(relativePath: { eq: "technologies/js.svg" }) {
-      ...icon
+    lexiihack: file(relativePath: { eq: "screenshots/lexii-hack.png" }) {
+      ...screenshot
+    }
+    learnery: file(relativePath: { eq: "screenshots/learnery.png" }) {
+      ...screenshot
+    }
+    portfolio: file(relativePath: { eq: "screenshots/portfolio.png" }) {
+      ...screenshot
+    }
+    knowted: file(relativePath: { eq: "screenshots/knowted.png" }) {
+      ...screenshot
     }
     me: file(relativePath: { eq: "me.png" }) {
       ...portrait
