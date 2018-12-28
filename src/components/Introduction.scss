@@ -40,6 +40,8 @@
 
 .introduction-container p {
   font-size: 0.8em;
+  letter-spacing: 1px;
+
   @media screen and (min-width: 571px) and (max-width: 670px) {
     font-size: 1.1em;
   }
@@ -52,7 +54,6 @@
   @media screen and (min-width: 1441px) {
     font-size: 2.2em;
   }
-  letter-spacing: 1px;
 
   &:first-child {
     margin-bottom: 0;

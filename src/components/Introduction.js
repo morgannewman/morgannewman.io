@@ -1,5 +1,5 @@
-import './Introduction.scss'
-import React from 'react'
+import './Introduction.scss';
+import React from 'react';
 
 export default function Introduction() {
   return (
@@ -9,7 +9,7 @@ export default function Introduction() {
       <p>
         a full-stack <span className="emphasis">software engineer</span>.
       </p>
-      <br />
+      {/* <br /> */}
       <p>
         I’m good with web technologies like
         <br />
@@ -19,5 +19,5 @@ export default function Introduction() {
         love all things software.
       </p>
     </div>
-  )
+  );
 }
