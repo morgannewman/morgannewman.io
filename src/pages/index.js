@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
         <ContactBar />
         <Introduction />
         <Portfolio data={data} />
-        <About />
+        <About data={data} />
       </main>
     </>
   );
@@ -47,6 +47,16 @@ export const icon = graphql`
   }
 `;
 
+export const portrait = graphql`
+  fragment portrait on File {
+    childImageSharp {
+      fluid(maxWidth: 124) {
+        ...GatsbyImageSharpFluid_tracedSVG
+      }
+    }
+  }
+`;
+
 export const pageQuery = graphql`
   query {
     womby: file(relativePath: { eq: "screenshots/womby.png" }) {
@@ -60,6 +70,9 @@ export const pageQuery = graphql`
     }
     js: file(relativePath: { eq: "technologies/js.svg" }) {
       ...icon
+    }
+    me: file(relativePath: { eq: "me.png" }) {
+      ...portrait
     }
   }
 `;

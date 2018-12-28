@@ -63,4 +63,23 @@ h2 {
     margin-left: 8%;
     margin-right: 8%;
   }
+
+  font-size: 0.8em;
+  letter-spacing: 1px;
+
+  @media screen and (min-width: 571px) and (max-width: 670px) {
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 671px) and (max-width: 840px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (min-width: 841px) and (max-width: 1440px) {
+    font-size: 1.2rem;
+  }
+  @media screen and (min-width: 1441px) {
+    font-size: 1.4rem;
+  }
+  @media screen and (min-width: 2160px) {
+    font-size: 1.8rem;
+  }
 }
