@@ -1,15 +1,10 @@
 $white: #f9f9f7;
 $black: #1a1a1a;
 
-.contact {
-  // // display: flex;
-  // // flex-direction: column;
-  // justify-content: flex-end;
-  // align-items: center;
-  // height: 100vh;
+.contactBar {
 }
 
-.contact-bar {
+.contactBar-links {
   background-color: $white;
   border: 1px solid black;
   z-index: 2;
@@ -42,14 +37,14 @@ $black: #1a1a1a;
   }
 }
 
-.contact-link {
+.contactBar-link {
   display: block;
   color: $black;
   text-decoration: none;
   padding: 8px;
 }
 
-.contact-link-icon {
+.contactBar-link-icon {
   width: 40px;
   height: 40px;
   color: $black;
