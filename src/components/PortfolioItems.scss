@@ -31,14 +31,6 @@ $red: #9c1a02;
 
 .portfolio-item-information {
   position: relative;
-  // Grow with the size of positioned buttons
-  height: 116px;
-  @media screen and (min-width: 671px) {
-    height: 132px;
-  }
-  @media screen and (min-width: 841px) {
-    height: 48px;
-  }
 }
 
 .portfolio-item-technologies {
@@ -56,8 +48,6 @@ $red: #9c1a02;
     flex-direction: column;
     justify-content: stretch;
     width: 100%;
-
-    padding-top: 16px;
   }
 
   @media screen and (min-width: 841px) {

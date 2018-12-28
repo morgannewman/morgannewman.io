@@ -52,9 +52,9 @@ export default function Portfolio({ data }) {
   ];
 
   return (
-    <main className="portfolio">
+    <div className="portfolio">
       <h2 className="portfolio-title">Recent Projects</h2>
       <PortfolioItems portfolio={portfolio} />
-    </main>
+    </div>
   );
 }
