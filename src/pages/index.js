@@ -1,11 +1,12 @@
-import './index.scss'
-import React from 'react'
-import { graphql } from 'gatsby'
-import { Helmet } from "react-helmet"
+import './index.scss';
+import React from 'react';
+import { graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 // Components
-import Introduction from '../components/Introduction'
-import Portfolio from '../components/Portfolio'
-import ContactBar from '../components/ContactBar'
+import Introduction from '../components/Introduction';
+import Portfolio from '../components/Portfolio';
+import ContactBar from '../components/ContactBar';
+import About from '../components/About';
 
 const IndexPage = ({ data }) => {
   return (
@@ -15,13 +16,16 @@ const IndexPage = ({ data }) => {
         <title>Portfolio | Morgan Newman</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
-      <ContactBar />
-      <Introduction />
-      <Portfolio data={data} />
+      <main className="main">
+        <ContactBar />
+        <Introduction />
+        <Portfolio data={data} />
+        <About />
+      </main>
     </>
-  )
-}
-export default IndexPage
+  );
+};
+export default IndexPage;
 
 export const screenshot = graphql`
   fragment screenshot on File {
@@ -31,7 +35,7 @@ export const screenshot = graphql`
       }
     }
   }
-`
+`;
 
 export const icon = graphql`
   fragment icon on File {
@@ -41,7 +45,7 @@ export const icon = graphql`
       }
     }
   }
-`
+`;
 
 export const pageQuery = graphql`
   query {
@@ -58,4 +62,4 @@ export const pageQuery = graphql`
       ...icon
     }
   }
-`
+`;

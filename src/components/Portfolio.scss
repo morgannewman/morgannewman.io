@@ -1,26 +1,5 @@
 .portfolio {
-  margin-left: 3%;
-  margin-right: 3%;
-  @media screen and (min-width: 360px) {
-    margin-left: 8%;
-    margin-right: 8%;
-  }
 }
 
 .portfolio-title {
-  margin: 0;
-
-  font-size: 1.4em;
-  @media screen and (min-width: 571px) and (max-width: 670px) {
-    font-size: 1.8em;
-  }
-  @media screen and (min-width: 671px) and (max-width: 840px) {
-    font-size: 2em;
-  }
-  @media screen and (min-width: 841px) and (max-width: 1440px) {
-    font-size: 2.8em;
-  }
-  @media screen and (min-width: 1441px) {
-    font-size: 3.8em;
-  }
 }
