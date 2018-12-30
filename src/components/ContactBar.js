@@ -28,7 +28,7 @@ export default function ContactBar({ className }) {
           <Github className="contactBar-link-icon" />
         </a>
         <a
-          href="https://stackoverflow.com/users/9045128/morgan"
+          href="https://stackoverflow.com/users/9045128/morgan?tab=profile"
           target="blank"
           className="contactBar-link"
         >
