@@ -13,7 +13,7 @@ $black: #1a1a1a;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: -112px;
+  margin-left: -141px;
 
   @media screen and (max-width: 1067px) {
     left: 50%;
@@ -22,7 +22,7 @@ $black: #1a1a1a;
   }
 
   @media screen and (min-width: 571px) {
-    margin-left: -128px;
+    margin-left: -161px;
   }
 
   @media screen and (min-width: 1068px) {
@@ -32,7 +32,7 @@ $black: #1a1a1a;
     float: right;
     top: 50%;
     right: 0;
-    margin-top: -166px;
+    margin-top: -200px;
     margin-right: -1px;
   }
 }
