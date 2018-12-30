@@ -4,9 +4,10 @@ import {
   FaLinkedin as LinkedIn,
   FaMedium as Medium,
   FaGithub as Github,
-  FaFileAlt as ResumeIcon
+  FaFileAlt as ResumeIcon,
+  FaStackOverflow as StackOverflow
 } from 'react-icons/fa';
-import Resume from '../portfolio/Resume.pdf';
+import Resume from '../portfolio/morgan-newman-resume.pdf';
 
 export default function ContactBar({ className }) {
   return (
@@ -25,6 +26,13 @@ export default function ContactBar({ className }) {
           className="contactBar-link"
         >
           <Github className="contactBar-link-icon" />
+        </a>
+        <a
+          href="https://stackoverflow.com/users/9045128/morgan"
+          target="blank"
+          className="contactBar-link"
+        >
+          <StackOverflow className="contactBar-link-icon" />
         </a>
         <a
           href="https://medium.com/@morgannewman"
