@@ -9,7 +9,9 @@ export default function PortfolioItems({ portfolio }) {
       <section className="portfolio-item" key={title}>
         <h3 className="emphasis portfolio-item-title">{title}</h3>
         <Img fluid={screenshot} className="portfolio-item-image" />
-        <p>{description}</p>
+        {description.map(string => (
+          <p>{string}</p>
+        ))}
         <div className="portfolio-item-information">
           <ul className="portfolio-item-technologies">
             {technologies.length > 0 && <li>{technologies.join(' / ')}</li>}
