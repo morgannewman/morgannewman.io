@@ -1,5 +1,7 @@
+$section-margin: 64px;
+
 *:focus {
-  outline-color: $red;
+  outline-color: $dark-purple;
 }
 
 a {
@@ -11,13 +13,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Mono', 'Georgia', 'serif';
+  font-family: 'Roboto Slab', 'Georgia', 'serif';
   min-width: 320px;
   color: $black;
   background: $white;
 }
 
 .emphasis {
-  color: $red;
+  color: $dark-purple;
   font-weight: bold;
 }

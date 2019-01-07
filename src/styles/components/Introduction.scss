@@ -1,61 +1,35 @@
-.introduction-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  height: 100vh;
-  min-height: 250px;
-
-  @media screen and (min-width: 571px) and (max-width: 670px) {
-    min-height: 300px;
-  }
-  @media screen and (min-width: 671px) and (max-width: 840px) {
-    min-height: 350px;
-  }
-  @media screen and (min-width: 841px) and (max-width: 1440px) {
-    min-height: 400px;
-  }
-  @media screen and (min-width: 1441px) {
-    min-height: 550px;
-  }
-}
-
 .introduction-title {
-  font-size: 3.2em;
-  @media screen and (min-width: 571px) and (max-width: 670px) {
-    font-size: 4.2em;
-  }
-  @media screen and (min-width: 671px) and (max-width: 840px) {
-    font-size: 5.2em;
-  }
-  @media screen and (min-width: 841px) and (max-width: 1440px) {
-    font-size: 6.2em;
-  }
-  @media screen and (min-width: 1441px) {
-    font-size: 9.2em;
-  }
-
+  display: block;
   margin: 0;
+
+  font-size: 2.2em;
+
+  @media (min-width: 768px) {
+    margin-top: -1.5%;
+    font-size: 3.2em;
+  }
 }
 
-.introduction-container p {
-  font-size: 0.8em;
-  letter-spacing: 1px;
+.introduction p {
+  margin: 0;
+  max-width: 50ch;
 
-  @media screen and (min-width: 571px) and (max-width: 670px) {
-    font-size: 1.1em;
-  }
-  @media screen and (min-width: 671px) and (max-width: 840px) {
-    font-size: 1.3em;
-  }
-  @media screen and (min-width: 841px) and (max-width: 1440px) {
-    font-size: 1.5em;
-  }
-  @media screen and (min-width: 1441px) {
-    font-size: 2.2em;
+  @media (min-width: 768px) {
+    max-width: 60ch;
   }
 
-  &:first-child {
-    margin-bottom: 0;
+  &:last-of-type {
+    margin-bottom: 12px;
+  }
+}
+
+.introduction-link {
+  &:first-of-type {
+    border-bottom-color: $dark-purple;
+    margin-right: 16px;
+  }
+
+  &:last-of-type {
+    border-bottom-color: $dark-green;
   }
 }
