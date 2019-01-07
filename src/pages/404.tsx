@@ -1,5 +1,6 @@
+import { Redirect } from '@reach/router';
 import React from 'react';
 
-const NotFoundPage = () => <h1>NOT FOUND</h1>;
+const NotFoundPage = () => <Redirect to="/" />;
 
 export default NotFoundPage;
