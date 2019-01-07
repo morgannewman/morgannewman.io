@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Morgan Newman\'s Portfolio'
+    title: "Morgan Newman's Portfolio",
   },
   pathPrefix: '/src/portfolio',
   plugins: [
@@ -12,13 +12,13 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/portfolio`
-      }
+        path: `${__dirname}/src/assets`,
+      },
     },
     {
       resolve: 'gatsby-plugin-favicon',
       options: {
-        logo: './src/favicon.png',
+        logo: './src/assets/favicon.png',
 
         // WebApp Manifest Configuration
         appName: null, // Inferred with your package.json
@@ -44,16 +44,16 @@ module.exports = {
           opengraph: false,
           twitter: false,
           yandex: false,
-          windows: false
-        }
-      }
+          windows: false,
+        },
+      },
     },
 
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-manifest'
+    'gatsby-plugin-manifest',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
-  ]
+  ],
 };

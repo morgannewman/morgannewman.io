@@ -7,7 +7,7 @@ import {
   FaStackOverflow as StackOverflow,
 } from 'react-icons/fa';
 
-import Resume from '../portfolio/morgan-newman-resume.pdf';
+import Resume from '../assets/morgan-newman-resume.pdf';
 
 interface IProps {
   className?: string;
