@@ -23,7 +23,6 @@
     "react-helmet": "^5.2.0",
     "react-icons": "^3.2.2",
     "react-typography": "^0.16.18",
-    "smoothscroll-polyfill": "^0.4.3",
     "typography": "^0.16.18"
   },
   "license": "MIT",

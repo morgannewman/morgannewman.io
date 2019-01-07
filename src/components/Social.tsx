@@ -9,7 +9,7 @@ import { MdMailOutline as Email } from 'react-icons/md';
 
 export default function Social() {
   return (
-    <section className="social">
+    <section className="social" id="social">
       <h2 className="social-title">Social</h2>
       <div className="social-links">
         <div className="social-links-block">

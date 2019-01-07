@@ -34,28 +34,6 @@ h2 {
   }
 }
 
-.main p,
-.main li {
-  // font-size: 0.8em;
-  // letter-spacing: 1px;
-
-  // @media screen and (min-width: 571px) and (max-width: 670px) {
-  //   font-size: 1rem;
-  // }
-  // @media screen and (min-width: 671px) and (max-width: 840px) {
-  //   font-size: 1.1rem;
-  // }
-  // @media screen and (min-width: 841px) and (max-width: 1440px) {
-  //   font-size: 1.2rem;
-  // }
-  // @media screen and (min-width: 1441px) {
-  //   font-size: 1.4rem;
-  // }
-  // @media screen and (min-width: 2160px) {
-  //   font-size: 1.8rem;
-  // }
-}
-
 a,
 a:link,
 a:visited {
@@ -68,7 +46,8 @@ a {
   text-decoration: none;
   border-bottom: 1px solid black;
 
-  .arrow {
+  .arrow,
+  .arrow-down {
     transition: all 0.1s ease-in-out;
     display: inline-block;
   }
@@ -77,6 +56,10 @@ a {
   &:active {
     & .arrow {
       transform: translateX(3px);
+    }
+
+    & .arrow-down {
+      transform: translateY(2px);
     }
   }
 }

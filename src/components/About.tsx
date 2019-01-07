@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function About({ data }) {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <Img fluid={data.me.childImageSharp.fluid} className="about-img" />
       <h2 className="about-title">About Me</h2>
       <div className="about-text">
