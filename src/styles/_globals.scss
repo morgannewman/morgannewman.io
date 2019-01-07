@@ -1,0 +1,18 @@
+*:focus {
+  outline: 1px dashed $dark-purple;
+}
+
+a {
+  cursor: pointer;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', 'Georgia', 'serif';
+  min-width: 320px;
+  color: $black;
+  background: $white;
+}

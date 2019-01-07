@@ -1,0 +1,42 @@
+.introduction {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.introduction-title {
+  display: block;
+  margin: 0;
+
+  font-size: 2.2em;
+
+  @media (min-width: 768px) {
+    margin-top: -1.5%;
+    font-size: 3.2em;
+  }
+}
+
+.introduction-emphasis {
+  color: $intro-accent;
+  font-weight: bold;
+}
+
+.introduction p {
+  margin: 0;
+  max-width: 50ch;
+
+  @media (min-width: 768px) {
+    max-width: 60ch;
+  }
+
+  &:last-of-type {
+    margin-bottom: 12px;
+  }
+}
+
+.introduction-link {
+  border-bottom-width: 2px;
+
+  &:first-of-type {
+    border-bottom-color: $intro-link-accent;
+    margin-right: 16px;
+  }
+}

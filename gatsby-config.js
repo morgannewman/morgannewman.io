@@ -1,22 +1,24 @@
 module.exports = {
   siteMetadata: {
-    title: 'Morgan Newman\'s Portfolio',
+    title: "Morgan Newman's Portfolio",
   },
   pathPrefix: '/src/portfolio',
   plugins: [
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-tslint',
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/portfolio`,
+        path: `${__dirname}/src/assets`,
       },
     },
     {
       resolve: 'gatsby-plugin-favicon',
       options: {
-        logo: './src/favicon.png',
+        logo: './src/assets/favicon.png',
 
         // WebApp Manifest Configuration
         appName: null, // Inferred with your package.json
