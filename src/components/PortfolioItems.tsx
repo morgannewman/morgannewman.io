@@ -1,5 +1,3 @@
-import './PortfolioItems.scss';
-
 import Img from 'gatsby-image';
 import React from 'react';
 

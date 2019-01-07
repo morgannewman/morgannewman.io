@@ -1,5 +1,3 @@
-import './ContactBar.scss';
-
 import React from 'react';
 import {
   FaFileAlt as ResumeIcon,

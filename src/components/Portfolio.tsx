@@ -1,5 +1,3 @@
-import './Portfolio.scss';
-
 import React from 'react';
 
 import PortfolioItems from './PortfolioItems';
@@ -14,7 +12,7 @@ export default function Portfolio({ data }) {
       ],
       github: 'https://github.com/morgannewman/knowted',
       screenshot: data.knowted.childImageSharp.fluid,
-      technologies: ['JavaScript', 'React', 'Node', 'PostgreSQL'],
+      technologies: [ 'JavaScript', 'React', 'Node', 'PostgreSQL' ],
       title: 'Knowted',
     },
     {
@@ -25,7 +23,7 @@ export default function Portfolio({ data }) {
       ],
       github: 'https://github.com/morgannewman/womby',
       screenshot: data.womby.childImageSharp.fluid,
-      technologies: ['JavaScript', 'React', 'Node', 'MongoDB'],
+      technologies: [ 'JavaScript', 'React', 'Node', 'MongoDB' ],
       title: 'Womby',
     },
     {
@@ -36,7 +34,7 @@ export default function Portfolio({ data }) {
       ],
       github: 'https://github.com/morgannewman/lexii-hack',
       screenshot: data.lexiihack.childImageSharp.fluid,
-      technologies: ['Python', 'JavaScript', 'React'],
+      technologies: [ 'Python', 'JavaScript', 'React' ],
       title: 'Lexii',
     },
     {
@@ -47,7 +45,7 @@ export default function Portfolio({ data }) {
       ],
       github: 'https://github.com/NikolasMsomething/learnery-frontend',
       screenshot: data.learnery.childImageSharp.fluid,
-      technologies: ['JavaScript', 'React', 'Node', 'PostgreSQL'],
+      technologies: [ 'JavaScript', 'React', 'Node', 'PostgreSQL' ],
       title: 'Learnery',
     },
   ];
