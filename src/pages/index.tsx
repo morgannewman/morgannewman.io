@@ -1,12 +1,16 @@
 import './index.scss';
+
 import React from 'react';
+
+// Gatsby
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
+
 // Components
+import About from '../components/About';
+import ContactBar from '../components/ContactBar';
 import Introduction from '../components/Introduction';
 import Portfolio from '../components/Portfolio';
-import ContactBar from '../components/ContactBar';
-import About from '../components/About';
 
 const IndexPage = ({ data }) => {
   return (

@@ -1,17 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: 'Morgan Newman\'s Portfolio',
+    title: 'Morgan Newman\'s Portfolio'
   },
   pathPrefix: '/src/portfolio',
   plugins: [
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-tslint',
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/portfolio`,
-      },
+        path: `${__dirname}/src/portfolio`
+      }
     },
     {
       resolve: 'gatsby-plugin-favicon',
@@ -42,16 +44,16 @@ module.exports = {
           opengraph: false,
           twitter: false,
           yandex: false,
-          windows: false,
-        },
-      },
+          windows: false
+        }
+      }
     },
 
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-manifest',
+    'gatsby-plugin-manifest'
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
-  ],
+  ]
 };
