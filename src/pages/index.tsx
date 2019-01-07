@@ -8,9 +8,9 @@ import { Helmet } from 'react-helmet';
 
 // Components
 import About from '../components/About';
-// import ContactBar from '../components/ContactBar';
 import Introduction from '../components/Introduction';
 import Portfolio from '../components/Portfolio';
+import Social from '../components/Social';
 
 const IndexPage = ({ data }) => {
   return (
@@ -21,10 +21,10 @@ const IndexPage = ({ data }) => {
         <link rel="canonical" href="https://morgannewman.io" />
       </Helmet>
       <main className="main">
-        {/* <ContactBar /> */}
         <Introduction />
         <Portfolio data={data} />
         <About data={data} />
+        <Social />
       </main>
     </>
   );

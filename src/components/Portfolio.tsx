@@ -87,7 +87,7 @@ export default function Portfolio({ data }) {
                   <h3 className="portfolio-item-info-links-title">Links</h3>
                   <a href={demo} target="blank" className="portfolio-item-link">
                     {title}
-                    <span className="portfolio-item-link-arrow">→</span>
+                    <span className="arrow">→</span>
                   </a>
                   <br />
                   <a
@@ -95,7 +95,7 @@ export default function Portfolio({ data }) {
                     target="blank"
                     className="portfolio-item-link"
                   >
-                    GitHub<span className="portfolio-item-link-arrow">→</span>
+                    GitHub<span className="arrow">→</span>
                   </a>
                 </div>
               </div>

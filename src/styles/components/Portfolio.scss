@@ -52,6 +52,10 @@
     padding: 3em 0 1.5em 0;
   }
 
+  @media (min-width: 1200px) {
+    padding: 0 0 1.5em 0;
+  }
+
   // border-bottom-color set in JS
   border-bottom-width: 3px;
   border-bottom-style: solid;
@@ -70,16 +74,4 @@
 .portfolio-item-link {
   display: inline-block;
   margin: 8px 0;
-
-  &-arrow {
-    transition: all 0.1s ease-in-out;
-    display: inline-block;
-  }
-
-  &:hover,
-  &:active {
-    & > .portfolio-item-link-arrow {
-      transform: translateX(3px);
-    }
-  }
 }
