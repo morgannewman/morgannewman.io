@@ -34,7 +34,7 @@ export default IndexPage;
 export const screenshot = graphql`
   fragment screenshot on File {
     childImageSharp {
-      fluid(maxWidth: 2160) {
+      fluid(maxWidth: 2800) {
         ...GatsbyImageSharpFluid_tracedSVG
       }
     }
@@ -59,13 +59,7 @@ export const pageQuery = graphql`
     lexii: file(relativePath: { eq: "screenshots/lexii.png" }) {
       ...screenshot
     }
-    lexiihack: file(relativePath: { eq: "screenshots/lexii-hack.png" }) {
-      ...screenshot
-    }
     learnery: file(relativePath: { eq: "screenshots/learnery.png" }) {
-      ...screenshot
-    }
-    portfolio: file(relativePath: { eq: "screenshots/portfolio.png" }) {
       ...screenshot
     }
     knowted: file(relativePath: { eq: "screenshots/knowted.png" }) {

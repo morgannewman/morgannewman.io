@@ -35,7 +35,7 @@ export default function Portfolio({ data }) {
         'Lexii uses natural language processing on the backend to extract keywords from text, and it pulls images with these keywords using the Unsplash API. I authored the entire frontend using React and portions of the Python backend.',
       ],
       github: 'https://github.com/morgannewman/lexii-hack',
-      screenshot: data.lexiihack.childImageSharp.fluid,
+      screenshot: data.lexii.childImageSharp.fluid,
       technologies: [ 'Python', 'JavaScript', 'React' ],
       title: 'Lexii',
     },
