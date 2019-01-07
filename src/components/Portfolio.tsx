@@ -8,7 +8,7 @@ export default function Portfolio({ data }) {
       demo: 'https://knowted.netlify.com/',
       description: [
         'For all the nerds out there like us, my team and I made Knowted. The idea is simple: group your learning resources by topic to stay organized, while also keeping notes on each topic.',
-        'I was the tech lead on this project with 3 other engineers, and I authored major portions of the frontend code using React, while also contributing to the RESTful backend using Node.',
+        'I was the tech lead on this project with 3 other engineers, and I authored major portions of the frontend code using React. I also contributed to the RESTful backend using Node.',
       ],
       github: 'https://github.com/morgannewman/knowted',
       screenshot: data.knowted.childImageSharp.fluid,
