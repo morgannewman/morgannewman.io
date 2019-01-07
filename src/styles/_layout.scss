@@ -1,20 +1,29 @@
 .main {
-  @media screen and (min-width: 560px) {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 560px) and (max-width: 1199px) {
     padding-left: 6%;
     padding-right: 6%;
   }
+  @media screen and (min-width: 1200px) {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
 
-section,
 .introduction,
 .portfolio {
-  padding: 32px 8%;
+  padding: 40px;
+}
 
-  @media screen and (min-width: 560px) {
-    padding: 32px 4%;
+.introduction {
+  @media screen and (min-width: 700px) {
+    margin-bottom: 40px;
   }
+}
 
-  @media screen and (min-width: 768px) {
-    padding: 64px 4%;
-  }
+.portfolio-item {
+  margin-bottom: 6em;
 }

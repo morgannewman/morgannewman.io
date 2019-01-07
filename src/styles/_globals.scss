@@ -1,7 +1,5 @@
-$section-margin: 64px;
-
 *:focus {
-  outline-color: $dark-purple;
+  outline: 1px dashed $dark-purple;
 }
 
 a {

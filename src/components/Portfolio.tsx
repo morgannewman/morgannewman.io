@@ -4,6 +4,7 @@ import React from 'react';
 export default function Portfolio({ data }) {
   const portfolio = [
     {
+      accent: '#A5DC87',
       demo: 'https://knowted.netlify.com/',
       description: [
         'For those with boundless curiosity, my team and I made Knowted. The idea is simple: group your learning resources by topic to stay organized, while also keeping notes on each topic.',
@@ -15,6 +16,7 @@ export default function Portfolio({ data }) {
       title: 'Knowted',
     },
     {
+      accent: '#596EE6',
       demo: 'https://womby-staging.firebaseapp.com/',
       description: [
         'I found myself wanting a simple notetaking app that works equally well on desktop and mobile, so I made Womby. Womby is a delightful notetaking web app that automatically saves to the cloud as you type. The interface is so intuitive, your grandma could probably use it.',
@@ -26,6 +28,7 @@ export default function Portfolio({ data }) {
       title: 'Womby',
     },
     {
+      accent: '#2C99E8',
       demo: 'https://lexii-hack.firebaseapp.com/',
       description: [
         'It can be challenging to find relevant images to pair with written content, so my hackathon team created Lexii. Lexii helps writers find relevant, royalty-free images to pair with their writing.',
@@ -37,6 +40,7 @@ export default function Portfolio({ data }) {
       title: 'Lexii',
     },
     {
+      accent: '#FFC12B',
       demo: 'https://learnery.netlify.com/',
       description: [
         'Learnery is a playful flashcard app for frontend engineers that uses a spaced-repetition algorithm to maximize your retention of engineering concepts.',
@@ -51,9 +55,9 @@ export default function Portfolio({ data }) {
 
   return (
     <div className="portfolio">
-      <h2 className="portfolio-title">Recent Projects</h2>
       {portfolio.map((item) => {
         const {
+          accent,
           title,
           description,
           screenshot,
@@ -63,31 +67,37 @@ export default function Portfolio({ data }) {
         } = item;
         return (
           <section className="portfolio-item" key={title}>
-            <h3 className="emphasis portfolio-item-title">{title}</h3>
             <Img fluid={screenshot} className="portfolio-item-image" />
-            {/* tslint:disable-next-line:jsx-key */}
-            {description.map((paragraph) => <p>{paragraph}</p>)}
-            <div className="portfolio-item-information">
-              <ul className="portfolio-item-technologies">
-                {technologies.length > 0 && <li>{technologies.join(' / ')}</li>}
-              </ul>
-              <div className="portfolio-item-link-container">
-                <a
-                  href={github}
-                  target="blank"
-                  tabIndex={1}
-                  className="portfolio-item-link portfolio-item-link-secondary"
-                >
-                  GitHub
-                </a>
-                <a
-                  href={demo}
-                  target="blank"
-                  tabIndex={1}
-                  className="portfolio-item-link portfolio-item-link-primary"
-                >
-                  Demo
-                </a>
+            <div className="portfolio-info-container">
+              <header
+                style={{ borderBottomColor: accent }}
+                className="portfolio-item-header"
+              >
+                <h2 className="portfolio-item-header-title">{title}</h2>
+                <ul className="portfolio-item-header-technologies">
+                  {<li>{technologies.join(' / ')}</li>}
+                </ul>
+              </header>
+              <div className="portfolio-item-info">
+                <div className="portfolio-item-info-description">
+                  {/* tslint:disable-next-line:jsx-key */}
+                  {description.map((paragraph) => <p>{paragraph}</p>)}
+                </div>
+                <div className="portfolio-item-info-links">
+                  <h3 className="portfolio-item-info-links-title">Links</h3>
+                  <a href={demo} target="blank" className="portfolio-item-link">
+                    {title}
+                    <span className="portfolio-item-link-arrow">→</span>
+                  </a>
+                  <br />
+                  <a
+                    href={github}
+                    target="blank"
+                    className="portfolio-item-link"
+                  >
+                    GitHub<span className="portfolio-item-link-arrow">→</span>
+                  </a>
+                </div>
               </div>
             </div>
           </section>

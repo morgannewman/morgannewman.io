@@ -28,6 +28,8 @@
 }
 
 .introduction-link {
+  border-bottom-width: 1.5px;
+
   &:first-of-type {
     border-bottom-color: $dark-purple;
     margin-right: 16px;
