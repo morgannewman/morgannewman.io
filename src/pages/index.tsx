@@ -19,6 +19,10 @@ const IndexPage = ({ data }) => {
         <meta charSet="utf-8" />
         <title>Portfolio | Morgan Newman</title>
         <link rel="canonical" href="https://morgannewman.io" />
+        <meta property="og:title" content="Portfolio | Morgan Newman"/>
+        <meta property="og:image" content={require('../assets/preview-img.png')}/>
+        <meta property="og:description" content="Morgan is a software engineer based in California"/>
+        <meta property="og:url" content="https://morgannewman.io/" />
       </Helmet>
       <main className="main">
         <Introduction />
